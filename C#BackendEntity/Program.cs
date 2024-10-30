@@ -18,10 +18,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //Repository
-builder.Services.AddScoped<ILoginRepository<LoginModel>, LoginRepository<LoginModel>>();
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
 //Services
-builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 
 
 var app = builder.Build();

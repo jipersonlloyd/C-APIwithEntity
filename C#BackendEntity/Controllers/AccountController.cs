@@ -9,10 +9,10 @@ namespace C_BackendEntity.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly ILoginService _loginService;
-        public AccountController(ILoginService loginService) 
+        private readonly IAccountService _accountService;
+        public AccountController(IAccountService accountService) 
         {
-            _loginService = loginService;
+            _accountService = accountService;
         }
 
         [Route("login")]
@@ -20,9 +20,9 @@ namespace C_BackendEntity.Controllers
         public async Task<IActionResult> IsAccountExist([FromBody]LoginModel loginModel)
         {
             Dictionary<string, dynamic> result;
-            LoginModel _loginModel = await _loginService.IsAccountExist(loginModel.Email);
+            AccountModel accountModel = await _accountService.IsAccountExist(loginModel.Email);
 
-            if (_loginModel == null)
+            if (accountModel == null)
             {
                 result = new Dictionary<string, dynamic>
                 {
@@ -32,7 +32,7 @@ namespace C_BackendEntity.Controllers
                 return Ok(result);
             };
 
-            if (_loginModel.Password != loginModel.Password)
+            if (accountModel.Password != loginModel.Password)
             {
                 result = new Dictionary<string, dynamic>
                 {
@@ -49,6 +49,34 @@ namespace C_BackendEntity.Controllers
                 };
 
             return Ok(result);
+        }
+
+        [Route("createaccount")]
+        [HttpPost]
+        public IActionResult AddModel([FromBody] AccountModel accountModel) 
+        {
+            Dictionary<string, dynamic> result;
+            try 
+            {
+                _accountService.AddModel(accountModel);
+                result = new Dictionary<string, dynamic>
+                {
+                    {"status", true},
+                    {"message", "Account Created Successfully"}
+                };
+
+                return Ok(result);
+            }
+            catch (Exception e) 
+            {
+                result = new Dictionary<string, dynamic>
+                {
+                    {"status", false},
+                    {"message", $"{e}"}
+                };
+
+                return Ok(result);
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("C#BackendEntity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50a9e5d7eb4aae942b47cc5b3de09babead0ad8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("C#BackendEntity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("C#BackendEntity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

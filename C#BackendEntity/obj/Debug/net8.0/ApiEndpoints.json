@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "C_BackendEntity.Controllers.AccountController",
+    "Method": "AddModel",
+    "RelativePath": "api/Account/createaccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountModel",
+        "Type": "C_BackendEntity.Model.AccountModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "C_BackendEntity.Controllers.AccountController",
     "Method": "IsAccountExist",
     "RelativePath": "api/Account/login",
     "HttpMethod": "POST",
