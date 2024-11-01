@@ -2,7 +2,7 @@
   {
     "ContainingType": "C_BackendEntity.Controllers.AccountController",
     "Method": "AddModel",
-    "RelativePath": "api/Account/createaccount",
+    "RelativePath": "api/auth/createaccount",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "C_BackendEntity.Controllers.AccountController",
     "Method": "IsAccountExist",
-    "RelativePath": "api/Account/login",
+    "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

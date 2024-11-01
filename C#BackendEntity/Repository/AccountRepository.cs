@@ -1,6 +1,6 @@
 ﻿using C_BackendEntity.Data;
 using C_BackendEntity.Model;
-using C_BackendEntity.Repository;
+using C_BackendEntity.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -20,6 +20,12 @@ namespace C_BackendEntity.Services
             _appDbContext.Add(entity);
             _appDbContext.SaveChanges();
         }
+
+        public void UpdateModel(AccountModel entity) 
+        {
+            _appDbContext.Update(entity);
+            _appDbContext.SaveChanges();
+        } 
 
     }
 }

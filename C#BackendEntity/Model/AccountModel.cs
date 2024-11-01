@@ -11,6 +11,9 @@ namespace C_BackendEntity.Model
         public required string Password { get; set; }
         public required string FirstName { get; set; }
         public required string LastName { get; set; }
+
+        [JsonIgnore]public string RefreshToken { get; set; }
+        [JsonIgnore]public DateTime RefreshTokenExpiryTime { get; set; }
     }
 
     public class LoginModel 

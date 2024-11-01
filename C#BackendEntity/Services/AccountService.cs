@@ -1,5 +1,6 @@
 ﻿using C_BackendEntity.Model;
-using C_BackendEntity.Repository;
+using C_BackendEntity.Repository.Interface;
+using C_BackendEntity.Services.Interface;
 
 namespace C_BackendEntity.Services
 {
@@ -14,6 +15,8 @@ namespace C_BackendEntity.Services
 
         public async Task<AccountModel> IsAccountExist(string email) => await _loginRepository.IsAccountExist(u => u.Email == email);
         public void AddModel(AccountModel createAccountModel) => _loginRepository.AddModel(createAccountModel);
+
+        public void UpdateModel(AccountModel accountModel) => _loginRepository.UpdateModel(accountModel);
 
     }
 }
