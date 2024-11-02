@@ -8,5 +8,7 @@ namespace C_BackendEntity.Services.Interface
         void AddModel(AccountModel createAccountModel);
 
         void UpdateModel(AccountModel accountModel);
+
+        Task<AccountModel> GetRefreshToken(string token);
     }
 }

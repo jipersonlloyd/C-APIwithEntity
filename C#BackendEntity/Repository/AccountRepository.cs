@@ -25,7 +25,9 @@ namespace C_BackendEntity.Services
         {
             _appDbContext.Update(entity);
             _appDbContext.SaveChanges();
-        } 
+        }
+
+        public async Task<AccountModel> GetRefreshToken(string token) => await _appDbContext.Set<AccountModel>().FindAsync(token);
 
     }
 }

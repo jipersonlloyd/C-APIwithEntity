@@ -1,11 +1,13 @@
 ﻿using C_BackendEntity.Model;
 using C_BackendEntity.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Common;
 using System.Security.Claims;
 
 namespace C_BackendEntity.Controllers
-{   
+{
     [ApiController]
     [Route("api/auth")]
     public class AccountController : ControllerBase
@@ -24,18 +26,18 @@ namespace C_BackendEntity.Controllers
         {
             AccountModel accountModel = await _accountService.IsAccountExist(loginModel.Email);
 
-            if (accountModel == null) return Unauthorized(new Dictionary<string, dynamic> 
+            if (accountModel == null) return Unauthorized(new
             {
-                { "status", false },
-                { "message", "Account doesn't exist" }
+                status = false,
+                message = "Account doesn't exist"
             });
 
             if (accountModel.Email != loginModel.Email || accountModel.Password != loginModel.Password) 
             {
-                return Unauthorized(new Dictionary<string,dynamic>
+                return Unauthorized(new
                 {
-                    { "status", false },
-                    { "message", "Incorrect Username or Password" }
+                    status = false,
+                    message = "Incorrect Username or Password"
                 });
             }
 
@@ -57,15 +59,17 @@ namespace C_BackendEntity.Controllers
 
             return Ok(new
             {
+                status = true,
+                message = "Account Login Successfully",
                 AccessToken = accessToken,
-                RefreshToken = refreshToken
+                RefreshToken = refreshToken, 
             });
         }
 
-        /* [HttpPost("refresh-token")]
-        public IActionResult RefreshToken([FromBody] LoginModel loginModel)
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken([FromBody] string refreshToken)
         {
-            AccountModel accountModel = _userRepository.GetUserByRefreshToken(request.RefreshToken);
+            AccountModel accountModel = await _accountService.GetRefreshToken(refreshToken);
             if (accountModel == null || accountModel.RefreshTokenExpiryTime <= DateTime.Now)
             {
                 return Unauthorized();
@@ -86,10 +90,11 @@ namespace C_BackendEntity.Controllers
 
             return Ok(new
             {
+                status = true,
                 AccessToken = accessToken,
-                RefreshToken = newRefreshToken
+                RefreshToken = newRefreshToken,
             });
-        } */
+        } 
 
 
         [Route("createaccount")]

@@ -18,5 +18,7 @@ namespace C_BackendEntity.Services
 
         public void UpdateModel(AccountModel accountModel) => _loginRepository.UpdateModel(accountModel);
 
+        public async Task<AccountModel> GetRefreshToken(string token) => await _loginRepository.GetRefreshToken(token); 
+
     }
 }

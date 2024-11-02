@@ -1,9 +1,14 @@
+using Azure.Core;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
+using System.Net.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace C_BackendEntity.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Authorize]
+    [Route("api")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -18,7 +23,9 @@ namespace C_BackendEntity.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+
+        [Route("weather")]
+        [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

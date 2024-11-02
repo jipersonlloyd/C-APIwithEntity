@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using C_BackendEntity.Services.Interface;
 using C_BackendEntity.Repository.Interface;
+using C_BackendEntity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,7 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 
 // Configure JWT settings
 var jwtSettings = builder.Configuration.GetSection("Jwt");
+jwtSettings["Key"] = KeyGenerator.GenerateRandomKey(32);
 builder.Services.Configure<JwtSettings>(jwtSettings);
 
 // Add Authentication

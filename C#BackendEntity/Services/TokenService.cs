@@ -21,7 +21,7 @@ namespace C_BackendEntity.Services
 
         public string GenerateAccessToken(IEnumerable<Claim> claims)
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(KeyGenerator.GenerateRandomKey(32)));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
@@ -31,7 +31,8 @@ namespace C_BackendEntity.Services
                 expires: DateTime.Now.AddMinutes(_jwtSettings.AccessTokenLifetimeMinutes),
                 signingCredentials: credentials
             );
-
+            Console.WriteLine($"Expires: {DateTime.Now.AddMinutes(_jwtSettings.AccessTokenLifetimeMinutes).ToString()}");
+            Console.WriteLine($"Token: {token}");
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
