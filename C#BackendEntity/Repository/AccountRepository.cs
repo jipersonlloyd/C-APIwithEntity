@@ -14,7 +14,7 @@ namespace C_BackendEntity.Services
             _appDbContext = appDbContext;
         }
 
-        public async Task<AccountModel> IsAccountExist(Expression<Func<AccountModel, bool>> predicate) => await _appDbContext.Set<AccountModel>().FirstOrDefaultAsync(predicate);
+        public async Task<AccountModel> IsAccountExist(string email) => await _appDbContext.Set<AccountModel>().FirstOrDefaultAsync(x => x.Email == email);
         public void AddModel(AccountModel entity) 
         {
             _appDbContext.Add(entity);
@@ -27,7 +27,7 @@ namespace C_BackendEntity.Services
             _appDbContext.SaveChanges();
         }
 
-        public async Task<AccountModel> GetRefreshToken(string token) => await _appDbContext.Set<AccountModel>().FindAsync(token);
+        public async Task<AccountModel> GetRefreshToken(string token) => await _appDbContext.Set<AccountModel>().FirstOrDefaultAsync(x => x.RefreshToken == token);
 
     }
 }

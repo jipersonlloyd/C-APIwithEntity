@@ -5,7 +5,7 @@ namespace C_BackendEntity.Repository.Interface
 {
     public interface IAccountRepository
     {
-        Task<AccountModel> IsAccountExist(Expression<Func<AccountModel, bool>> predicate);
+        Task<AccountModel> IsAccountExist(string email);
         void AddModel(AccountModel createAccountModel);
 
         void UpdateModel(AccountModel accountModel);

@@ -36,6 +36,6 @@ namespace C_BackendEntity.Services
 
         public string GenerateRefreshToken() => Guid.NewGuid().ToString();
 
-        public DateTime SetRefreshTokenTime() => DateTime.Now.AddMinutes(_jwtSettings.RefreshTokenLifetimeDays);
+        public DateTime SetRefreshTokenTime() => DateTime.Now.AddDays(_jwtSettings.RefreshTokenLifetimeDays);
     }
 }

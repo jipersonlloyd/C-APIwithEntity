@@ -64,10 +64,10 @@ namespace C_BackendEntity.Controllers
         }
 
         [HttpPost("refresh-token")]
-        public async Task<IActionResult> RefreshToken([FromBody] string refreshToken)
+        public async Task<IActionResult> RefreshToken(string token)
         {
-            AccountModel accountModel = await _accountService.GetRefreshToken(refreshToken);
-            if (accountModel == null || accountModel.RefreshTokenExpiryTime <= DateTime.UtcNow) // always use UtcNow when comparing expiration of tokens to avoid future discrepancies
+            AccountModel accountModel = await _accountService.GetRefreshToken(token);
+            if (accountModel == null || accountModel.RefreshTokenExpiryTime <= DateTime.Now) 
             {
                 return Unauthorized();
             }
@@ -79,17 +79,11 @@ namespace C_BackendEntity.Controllers
         };
 
             var accessToken = _tokenService.GenerateAccessToken(claims);
-            var newRefreshToken = _tokenService.GenerateRefreshToken();
-
-            accountModel.RefreshToken = newRefreshToken;
-            accountModel.RefreshTokenExpiryTime = _tokenService.SetRefreshTokenTime();
-            _accountService.UpdateModel(accountModel);
 
             return Ok(new
             {
                 status = true,
                 AccessToken = accessToken,
-                RefreshToken = newRefreshToken,
             });
         } 
 

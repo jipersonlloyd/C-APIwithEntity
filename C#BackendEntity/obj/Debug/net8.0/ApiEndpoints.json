@@ -40,9 +40,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "refreshToken",
+        "Name": "token",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
