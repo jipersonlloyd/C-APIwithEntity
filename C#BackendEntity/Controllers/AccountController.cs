@@ -14,6 +14,7 @@ namespace C_BackendEntity.Controllers
     {
         private readonly ITokenService _tokenService;
         private readonly IAccountService _accountService;
+
         public AccountController(IAccountService accountService, ITokenService tokenService) 
         {
             _accountService = accountService;
@@ -26,20 +27,17 @@ namespace C_BackendEntity.Controllers
         {
             AccountModel accountModel = await _accountService.IsAccountExist(loginModel.Email);
 
-            if (accountModel == null) return Unauthorized(new
+            if (accountModel == null) return Ok(new
             {
                 status = false,
                 message = "Account doesn't exist"
             });
 
-            if (accountModel.Email != loginModel.Email || accountModel.Password != loginModel.Password) 
+            if (accountModel.Email != loginModel.Email || accountModel.Password != loginModel.Password) return Ok(new
             {
-                return Unauthorized(new
-                {
-                    status = false,
-                    message = "Incorrect Username or Password"
-                });
-            }
+                status = false,
+                message = "Incorrect Username or Password"
+            });
 
 
             var claims = new List<Claim> 
@@ -47,7 +45,6 @@ namespace C_BackendEntity.Controllers
                 new Claim(ClaimTypes.Name, accountModel.Email),
                 new Claim(ClaimTypes.NameIdentifier, accountModel.Id.ToString())
             };
-
             var accessToken = _tokenService.GenerateAccessToken(claims);
             var refreshToken = _tokenService.GenerateRefreshToken();
 
@@ -70,7 +67,7 @@ namespace C_BackendEntity.Controllers
         public async Task<IActionResult> RefreshToken([FromBody] string refreshToken)
         {
             AccountModel accountModel = await _accountService.GetRefreshToken(refreshToken);
-            if (accountModel == null || accountModel.RefreshTokenExpiryTime <= DateTime.Now)
+            if (accountModel == null || accountModel.RefreshTokenExpiryTime <= DateTime.UtcNow) // always use UtcNow when comparing expiration of tokens to avoid future discrepancies
             {
                 return Unauthorized();
             }

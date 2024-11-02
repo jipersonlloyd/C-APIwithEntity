@@ -23,21 +23,19 @@ namespace C_BackendEntity.Services
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
+            JwtSecurityToken token = new JwtSecurityToken(
                 issuer: _jwtSettings.Issuer,
                 audience: _jwtSettings.Audience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(_jwtSettings.AccessTokenLifetimeMinutes),
-                signingCredentials: credentials
+                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.AccessTokenLifetimeMinutes),
+                signingCredentials: credentials,
+                notBefore: DateTime.UtcNow
             );
-            Console.WriteLine($"Expires: {DateTime.Now.AddMinutes(_jwtSettings.AccessTokenLifetimeMinutes).ToString()}");
-            Console.WriteLine($"Token: {token}");
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         public string GenerateRefreshToken() => Guid.NewGuid().ToString();
 
-        public DateTime SetRefreshTokenTime() => DateTime.Now.AddDays(_jwtSettings.RefreshTokenLifetimeDays);
+        public DateTime SetRefreshTokenTime() => DateTime.Now.AddMinutes(_jwtSettings.RefreshTokenLifetimeDays);
     }
 }
