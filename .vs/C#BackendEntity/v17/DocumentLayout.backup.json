@@ -3,35 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\model\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\model\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PracticeDatabase/True/SqlTable/dbo.AccountModel.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\repository\\iacccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\repository\\iacccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\repository\\interface\\iacccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\repository\\interface\\iacccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\services\\interface\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\services\\interface\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|c:\\users\\lloyd jiperson diaz\\source\\repos\\c#backendentity\\c#backendentity\\model\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2D1ACD-85B3-4E9E-8CCF-A0B4D2FC0C22}|C#BackendEntity\\C#BackendEntity.csproj|solutionrelative:c#backendentity\\model\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,101 +49,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.AccountModel.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PracticeDatabase/True/SqlTable/dbo.AccountModel.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PracticeDatabase/True/SqlTable/dbo.AccountModel.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-30T11:17:04.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "C#BackendEntity\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "C#BackendEntity\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA8wCQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T11:03:49.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Model\\AccountModel.cs",
-              "RelativeDocumentMoniker": "C#BackendEntity\\Model\\AccountModel.cs",
-              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Model\\AccountModel.cs",
-              "RelativeToolTip": "C#BackendEntity\\Model\\AccountModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T10:50:17.735Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "C#BackendEntity\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "C#BackendEntity\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowEgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T09:02:04.873Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\appsettings.json",
+              "RelativeDocumentMoniker": "C#BackendEntity\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\appsettings.json",
+              "RelativeToolTip": "C#BackendEntity\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-02T10:25:07.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "C#BackendEntity\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\AccountService.cs",
-              "RelativeToolTip": "C#BackendEntity\\Services\\AccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T08:51:10.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\IAccountService.cs",
-              "RelativeDocumentMoniker": "C#BackendEntity\\Services\\IAccountService.cs",
-              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\IAccountService.cs",
-              "RelativeToolTip": "C#BackendEntity\\Services\\IAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T08:51:03.373Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "IAcccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Repository\\Interface\\IAcccountRepository.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Repository\\Interface\\IAcccountRepository.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Repository\\Interface\\IAcccountRepository.cs",
+              "RelativeToolTip": "C#BackendEntity\\Repository\\Interface\\IAcccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:31:16.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "C#BackendEntity\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T02:31:37.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Repository\\AccountRepository.cs",
               "RelativeDocumentMoniker": "C#BackendEntity\\Repository\\AccountRepository.cs",
               "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Repository\\AccountRepository.cs",
               "RelativeToolTip": "C#BackendEntity\\Repository\\AccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T07:10:38.596Z"
+              "WhenOpened": "2024-11-01T01:03:54.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Model\\AccountModel.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Model\\AccountModel.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Model\\AccountModel.cs",
+              "RelativeToolTip": "C#BackendEntity\\Model\\AccountModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T00:29:00.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "C#BackendEntity\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T00:25:10.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.AccountModel [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/PracticeDatabase/True/SqlTable/dbo.AccountModel.sql",
+              "ToolTip": "dbo.AccountModel [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-02T09:01:24.881Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAcccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Repository\\IAcccountRepository.cs",
-              "RelativeDocumentMoniker": "C#BackendEntity\\Repository\\IAcccountRepository.cs",
-              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Repository\\IAcccountRepository.cs",
-              "RelativeToolTip": "C#BackendEntity\\Repository\\IAcccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\Interface\\IAccountService.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Services\\Interface\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\Interface\\IAccountService.cs",
+              "RelativeToolTip": "C#BackendEntity\\Services\\Interface\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T07:10:22.008Z"
+              "WhenOpened": "2024-11-01T08:36:40.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\TokenService.cs",
+              "RelativeToolTip": "C#BackendEntity\\Services\\TokenService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wCYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T09:06:02.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "C#BackendEntity\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Lloyd Jiperson Diaz\\Source\\Repos\\C#BackendEntity\\C#BackendEntity\\Services\\AccountService.cs",
+              "RelativeToolTip": "C#BackendEntity\\Services\\AccountService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:37:00.309Z",
+              "EditorCaption": ""
             }
           ]
         }
